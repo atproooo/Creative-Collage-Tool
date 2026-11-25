@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <title>拼贴素材生成器</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <div>
+            <p class="eyebrow">COLLAGE TOOL</p>
+            <h1>拼贴素材生成器</h1>
+          </div>
+        </div>
+        <!-- <span class="header-note">轻松收集生活里的灵感</span> -->
+      </header>
+
+      <main class="workspace">
+        <section class="intro" aria-labelledby="page-title">
+          <div>
+            <p class="eyebrow">YOUR LITTLE STICKER STUDIO</p>
+            <h2 id="page-title">把喜欢的瞬间，<br />变成拼贴素材。</h2>
+            <p class="intro-copy">从照片到贴纸，让每一份灵感都有自己的形状。</p>
+          </div>
+          <span class="stage-label">工作台搭建中</span>
+        </section>
+
+        <p class="notice" role="note">目前是页面框架，导入、编辑和下载功能将在后续阶段开放。</p>
+
+        <div class="workspace-grid">
+          <section class="panel editor-panel" aria-labelledby="editor-title">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">01 / CREATE</p>
+                <h3 id="editor-title">编辑素材</h3>
+              </div>
+              <span class="panel-tag">编辑区</span>
+            </div>
+            <div class="editor-empty">
+              <div class="empty-art" aria-hidden="true">
+                <span class="art-card art-card-back"></span>
+                <span class="art-card art-card-front">✳</span>
+              </div>
+              <h4>从一张照片开始</h4>
+              <p>导入照片后，就可以在这里制作你的贴纸。</p>
+              <button type="button" class="button button-primary" disabled>导入照片 · 即将开放</button>
+            </div>
+            <div class="editor-toolbar" aria-label="编辑工具">
+              <button type="button" class="tool-button" disabled>多边形裁切</button>
+              <button type="button" class="tool-button" disabled>自动去背景</button>
+              <button type="button" class="tool-button" disabled>白边与阴影</button>
+            </div>
+          </section>
+
+          <aside class="panel batch-panel" aria-labelledby="batch-title">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">02 / COLLECT</p>
+                <h3 id="batch-title">这一批素材</h3>
+              </div>
+              <span class="count">0</span>
+            </div>
+            <div class="batch-empty">
+              <span class="batch-icon" aria-hidden="true">✧</span>
+              <h4>这里还空空的</h4>
+              <p>完成的贴纸会在这里集合，方便一起查看和比较。</p>
+            </div>
+            <div class="batch-footer">
+              <button type="button" class="button button-secondary" disabled>下载全部 · 即将开放</button>
+              <p>第一版不保存工程，请记得及时下载素材。</p>
+            </div>
+          </aside>
+        </div>
+        <footer class="site-footer">MADE FOR LITTLE MOMENTS <span aria-hidden="true">✦</span></footer>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
